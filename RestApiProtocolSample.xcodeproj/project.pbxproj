@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92855DCC2240BB7D003EEB6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DCB2240BB7D003EEB6A /* AppDelegate.swift */; };
+		92855DCE2240BB7D003EEB6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DCD2240BB7D003EEB6A /* ViewController.swift */; };
+		92855DD12240BB7D003EEB6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855DCF2240BB7D003EEB6A /* Main.storyboard */; };
+		92855DD32240BB7E003EEB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92855DD22240BB7E003EEB6A /* Assets.xcassets */; };
+		92855DD62240BB7E003EEB6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855DD42240BB7E003EEB6A /* LaunchScreen.storyboard */; };
+		92855DDF2240BC2E003EEB6A /* RestApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DDE2240BC2E003EEB6A /* RestApiProtocol.swift */; };
+		92855DE12240BC41003EEB6A /* RestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DE02240BC41003EEB6A /* RestResult.swift */; };
+		92855DE32240C0EF003EEB6A /* RestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DE22240C0EF003EEB6A /* RestMethod.swift */; };
+		92855DE92240CA82003EEB6A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92855DE62240CA82003EEB6A /* RxSwift.framework */; };
+		92855DEA2240CA82003EEB6A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92855DE72240CA82003EEB6A /* RxCocoa.framework */; };
+		92855DEB2240CA82003EEB6A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92855DE82240CA82003EEB6A /* Alamofire.framework */; };
+		92855DEE2240D03E003EEB6A /* Data+MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DED2240D03E003EEB6A /* Data+MimeType.swift */; };
+		92855DF12240D60B003EEB6A /* RestRunnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF02240D60B003EEB6A /* RestRunnable.swift */; };
+		92855DF42240EC72003EEB6A /* RestUploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF32240EC72003EEB6A /* RestUploadFile.swift */; };
+		92855DF82240EE3B003EEB6A /* SoftwareListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */; };
+		92855DF92240EE3B003EEB6A /* SoftwareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF72240EE3B003EEB6A /* SoftwareModel.swift */; };
+		92855DFB2240EF4E003EEB6A /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFA2240EF4E003EEB6A /* iTunesApi.swift */; };
+		92855DFD2240F322003EEB6A /* RestApiRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFC2240F322003EEB6A /* RestApiRequestQueue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		92855DC82240BB7D003EEB6A /* RestApiProtocolSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestApiProtocolSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92855DCB2240BB7D003EEB6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92855DCD2240BB7D003EEB6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92855DD02240BB7D003EEB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92855DD22240BB7E003EEB6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92855DD52240BB7E003EEB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92855DD72240BB7E003EEB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92855DDE2240BC2E003EEB6A /* RestApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiProtocol.swift; sourceTree = "<group>"; };
+		92855DE02240BC41003EEB6A /* RestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestResult.swift; sourceTree = "<group>"; };
+		92855DE22240C0EF003EEB6A /* RestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMethod.swift; sourceTree = "<group>"; };
+		92855DE62240CA82003EEB6A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		92855DE72240CA82003EEB6A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		92855DE82240CA82003EEB6A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		92855DED2240D03E003EEB6A /* Data+MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MimeType.swift"; sourceTree = "<group>"; };
+		92855DF02240D60B003EEB6A /* RestRunnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRunnable.swift; sourceTree = "<group>"; };
+		92855DF32240EC72003EEB6A /* RestUploadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestUploadFile.swift; sourceTree = "<group>"; };
+		92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareListInfo.swift; sourceTree = "<group>"; };
+		92855DF72240EE3B003EEB6A /* SoftwareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareModel.swift; sourceTree = "<group>"; };
+		92855DFA2240EF4E003EEB6A /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
+		92855DFC2240F322003EEB6A /* RestApiRequestQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiRequestQueue.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92855DC52240BB7D003EEB6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92855DE92240CA82003EEB6A /* RxSwift.framework in Frameworks */,
+				92855DEA2240CA82003EEB6A /* RxCocoa.framework in Frameworks */,
+				92855DEB2240CA82003EEB6A /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92855DBF2240BB7D003EEB6A = {
+			isa = PBXGroup;
+			children = (
+				92855DCA2240BB7D003EEB6A /* RestApiProtocolSample */,
+				92855DC92240BB7D003EEB6A /* Products */,
+				92855DE52240CA81003EEB6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92855DC92240BB7D003EEB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92855DC82240BB7D003EEB6A /* RestApiProtocolSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92855DCA2240BB7D003EEB6A /* RestApiProtocolSample */ = {
+			isa = PBXGroup;
+			children = (
+				92855DDD2240BC16003EEB6A /* RestApiProtocol */,
+				92855DF22240E81E003EEB6A /* RestApi */,
+				92855DF52240EE3B003EEB6A /* Models */,
+				92855DCB2240BB7D003EEB6A /* AppDelegate.swift */,
+				92855DCD2240BB7D003EEB6A /* ViewController.swift */,
+				92855DCF2240BB7D003EEB6A /* Main.storyboard */,
+				92855DD22240BB7E003EEB6A /* Assets.xcassets */,
+				92855DD42240BB7E003EEB6A /* LaunchScreen.storyboard */,
+				92855DD72240BB7E003EEB6A /* Info.plist */,
+			);
+			path = RestApiProtocolSample;
+			sourceTree = "<group>";
+		};
+		92855DDD2240BC16003EEB6A /* RestApiProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				92855DEC2240D02A003EEB6A /* Utils */,
+				92855DDE2240BC2E003EEB6A /* RestApiProtocol.swift */,
+				92855DE02240BC41003EEB6A /* RestResult.swift */,
+				92855DE22240C0EF003EEB6A /* RestMethod.swift */,
+				92855DF32240EC72003EEB6A /* RestUploadFile.swift */,
+				92855DF02240D60B003EEB6A /* RestRunnable.swift */,
+				92855DFC2240F322003EEB6A /* RestApiRequestQueue.swift */,
+			);
+			path = RestApiProtocol;
+			sourceTree = "<group>";
+		};
+		92855DE52240CA81003EEB6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92855DE82240CA82003EEB6A /* Alamofire.framework */,
+				92855DE72240CA82003EEB6A /* RxCocoa.framework */,
+				92855DE62240CA82003EEB6A /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92855DEC2240D02A003EEB6A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				92855DED2240D03E003EEB6A /* Data+MimeType.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		92855DF22240E81E003EEB6A /* RestApi */ = {
+			isa = PBXGroup;
+			children = (
+				92855DFA2240EF4E003EEB6A /* iTunesApi.swift */,
+			);
+			path = RestApi;
+			sourceTree = "<group>";
+		};
+		92855DF52240EE3B003EEB6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */,
+				92855DF72240EE3B003EEB6A /* SoftwareModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92855DC72240BB7D003EEB6A /* RestApiProtocolSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92855DDA2240BB7E003EEB6A /* Build configuration list for PBXNativeTarget "RestApiProtocolSample" */;
+			buildPhases = (
+				92855DC42240BB7D003EEB6A /* Sources */,
+				92855DC52240BB7D003EEB6A /* Frameworks */,
+				92855DC62240BB7D003EEB6A /* Resources */,
+				92855DE42240CA21003EEB6A /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestApiProtocolSample;
+			productName = RestApiProtocolSample;
+			productReference = 92855DC82240BB7D003EEB6A /* RestApiProtocolSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92855DC02240BB7D003EEB6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "김정무";
+				TargetAttributes = {
+					92855DC72240BB7D003EEB6A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 92855DC32240BB7D003EEB6A /* Build configuration list for PBXProject "RestApiProtocolSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92855DBF2240BB7D003EEB6A;
+			productRefGroup = 92855DC92240BB7D003EEB6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92855DC72240BB7D003EEB6A /* RestApiProtocolSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92855DC62240BB7D003EEB6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92855DD62240BB7E003EEB6A /* LaunchScreen.storyboard in Resources */,
+				92855DD32240BB7E003EEB6A /* Assets.xcassets in Resources */,
+				92855DD12240BB7D003EEB6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92855DE42240CA21003EEB6A /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92855DC42240BB7D003EEB6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92855DFB2240EF4E003EEB6A /* iTunesApi.swift in Sources */,
+				92855DF92240EE3B003EEB6A /* SoftwareModel.swift in Sources */,
+				92855DFD2240F322003EEB6A /* RestApiRequestQueue.swift in Sources */,
+				92855DCE2240BB7D003EEB6A /* ViewController.swift in Sources */,
+				92855DF82240EE3B003EEB6A /* SoftwareListInfo.swift in Sources */,
+				92855DE12240BC41003EEB6A /* RestResult.swift in Sources */,
+				92855DF42240EC72003EEB6A /* RestUploadFile.swift in Sources */,
+				92855DCC2240BB7D003EEB6A /* AppDelegate.swift in Sources */,
+				92855DF12240D60B003EEB6A /* RestRunnable.swift in Sources */,
+				92855DE32240C0EF003EEB6A /* RestMethod.swift in Sources */,
+				92855DDF2240BC2E003EEB6A /* RestApiProtocol.swift in Sources */,
+				92855DEE2240D03E003EEB6A /* Data+MimeType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92855DCF2240BB7D003EEB6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92855DD02240BB7D003EEB6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92855DD42240BB7E003EEB6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92855DD52240BB7E003EEB6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92855DD82240BB7E003EEB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92855DD92240BB7E003EEB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92855DDB2240BB7E003EEB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB6224SL9Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RestApiProtocolSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jmkim0213.network.RestApiProtocolSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92855DDC2240BB7E003EEB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB6224SL9Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RestApiProtocolSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jmkim0213.network.RestApiProtocolSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92855DC32240BB7D003EEB6A /* Build configuration list for PBXProject "RestApiProtocolSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92855DD82240BB7E003EEB6A /* Debug */,
+				92855DD92240BB7E003EEB6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92855DDA2240BB7E003EEB6A /* Build configuration list for PBXNativeTarget "RestApiProtocolSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92855DDB2240BB7E003EEB6A /* Debug */,
+				92855DDC2240BB7E003EEB6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92855DC02240BB7D003EEB6A /* Project object */;
+}
