@@ -24,7 +24,7 @@
 		92855DF82240EE3B003EEB6A /* SoftwareListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */; };
 		92855DF92240EE3B003EEB6A /* SoftwareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF72240EE3B003EEB6A /* SoftwareModel.swift */; };
 		92855DFB2240EF4E003EEB6A /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFA2240EF4E003EEB6A /* iTunesApi.swift */; };
-		92855DFD2240F322003EEB6A /* RestApiRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFC2240F322003EEB6A /* RestApiRequestQueue.swift */; };
+		92855DFD2240F322003EEB6A /* RestApiQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFC2240F322003EEB6A /* RestApiQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareListInfo.swift; sourceTree = "<group>"; };
 		92855DF72240EE3B003EEB6A /* SoftwareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareModel.swift; sourceTree = "<group>"; };
 		92855DFA2240EF4E003EEB6A /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
-		92855DFC2240F322003EEB6A /* RestApiRequestQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiRequestQueue.swift; sourceTree = "<group>"; };
+		92855DFC2240F322003EEB6A /* RestApiQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 				92855DE22240C0EF003EEB6A /* RestMethod.swift */,
 				92855DF32240EC72003EEB6A /* RestUploadFile.swift */,
 				92855DF02240D60B003EEB6A /* RestRunnable.swift */,
-				92855DFC2240F322003EEB6A /* RestApiRequestQueue.swift */,
+				92855DFC2240F322003EEB6A /* RestApiQueue.swift */,
 			);
 			path = RestApiProtocol;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 			files = (
 				92855DFB2240EF4E003EEB6A /* iTunesApi.swift in Sources */,
 				92855DF92240EE3B003EEB6A /* SoftwareModel.swift in Sources */,
-				92855DFD2240F322003EEB6A /* RestApiRequestQueue.swift in Sources */,
+				92855DFD2240F322003EEB6A /* RestApiQueue.swift in Sources */,
 				92855DCE2240BB7D003EEB6A /* ViewController.swift in Sources */,
 				92855DF82240EE3B003EEB6A /* SoftwareListInfo.swift in Sources */,
 				92855DE12240BC41003EEB6A /* RestResult.swift in Sources */,
