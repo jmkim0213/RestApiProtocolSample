@@ -15,7 +15,7 @@ public class RestApiQueue {
     
     private var requestMap: [String: DataRequest] = [:]
     
-    static let `default`: RestApiQueue = {
+    public static let `default`: RestApiQueue = {
         return RestApiQueue("RestApiQueue.default")
     }()
     
