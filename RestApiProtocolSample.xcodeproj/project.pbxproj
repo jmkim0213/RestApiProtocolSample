@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921D57562262F34400C50F59 /* Disposable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D57552262F34400C50F59 /* Disposable+Utils.swift */; };
 		92855DCC2240BB7D003EEB6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DCB2240BB7D003EEB6A /* AppDelegate.swift */; };
 		92855DCE2240BB7D003EEB6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DCD2240BB7D003EEB6A /* ViewController.swift */; };
 		92855DD12240BB7D003EEB6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855DCF2240BB7D003EEB6A /* Main.storyboard */; };
 		92855DD32240BB7E003EEB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92855DD22240BB7E003EEB6A /* Assets.xcassets */; };
 		92855DD62240BB7E003EEB6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855DD42240BB7E003EEB6A /* LaunchScreen.storyboard */; };
 		92855DDF2240BC2E003EEB6A /* RestApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DDE2240BC2E003EEB6A /* RestApiProtocol.swift */; };
-		92855DE12240BC41003EEB6A /* RestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DE02240BC41003EEB6A /* RestResult.swift */; };
 		92855DE32240C0EF003EEB6A /* RestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DE22240C0EF003EEB6A /* RestMethod.swift */; };
 		92855DE92240CA82003EEB6A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92855DE62240CA82003EEB6A /* RxSwift.framework */; };
 		92855DEA2240CA82003EEB6A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92855DE72240CA82003EEB6A /* RxCocoa.framework */; };
@@ -24,10 +24,10 @@
 		92855DF82240EE3B003EEB6A /* SoftwareListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */; };
 		92855DF92240EE3B003EEB6A /* SoftwareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DF72240EE3B003EEB6A /* SoftwareModel.swift */; };
 		92855DFB2240EF4E003EEB6A /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFA2240EF4E003EEB6A /* iTunesApi.swift */; };
-		92855DFD2240F322003EEB6A /* RestApiQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855DFC2240F322003EEB6A /* RestApiQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		921D57552262F34400C50F59 /* Disposable+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disposable+Utils.swift"; sourceTree = "<group>"; };
 		92855DC82240BB7D003EEB6A /* RestApiProtocolSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestApiProtocolSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92855DCB2240BB7D003EEB6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92855DCD2240BB7D003EEB6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +36,6 @@
 		92855DD52240BB7E003EEB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92855DD72240BB7E003EEB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92855DDE2240BC2E003EEB6A /* RestApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiProtocol.swift; sourceTree = "<group>"; };
-		92855DE02240BC41003EEB6A /* RestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestResult.swift; sourceTree = "<group>"; };
 		92855DE22240C0EF003EEB6A /* RestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMethod.swift; sourceTree = "<group>"; };
 		92855DE62240CA82003EEB6A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		92855DE72240CA82003EEB6A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -47,7 +46,6 @@
 		92855DF62240EE3B003EEB6A /* SoftwareListInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareListInfo.swift; sourceTree = "<group>"; };
 		92855DF72240EE3B003EEB6A /* SoftwareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareModel.swift; sourceTree = "<group>"; };
 		92855DFA2240EF4E003EEB6A /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
-		92855DFC2240F322003EEB6A /* RestApiQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +100,9 @@
 			children = (
 				92855DEC2240D02A003EEB6A /* Utils */,
 				92855DDE2240BC2E003EEB6A /* RestApiProtocol.swift */,
-				92855DE02240BC41003EEB6A /* RestResult.swift */,
 				92855DE22240C0EF003EEB6A /* RestMethod.swift */,
 				92855DF32240EC72003EEB6A /* RestUploadFile.swift */,
 				92855DF02240D60B003EEB6A /* RestRunnable.swift */,
-				92855DFC2240F322003EEB6A /* RestApiQueue.swift */,
 			);
 			path = RestApiProtocol;
 			sourceTree = "<group>";
@@ -125,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				92855DED2240D03E003EEB6A /* Data+MimeType.swift */,
+				921D57552262F34400C50F59 /* Disposable+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -244,11 +241,10 @@
 			files = (
 				92855DFB2240EF4E003EEB6A /* iTunesApi.swift in Sources */,
 				92855DF92240EE3B003EEB6A /* SoftwareModel.swift in Sources */,
-				92855DFD2240F322003EEB6A /* RestApiQueue.swift in Sources */,
 				92855DCE2240BB7D003EEB6A /* ViewController.swift in Sources */,
 				92855DF82240EE3B003EEB6A /* SoftwareListInfo.swift in Sources */,
-				92855DE12240BC41003EEB6A /* RestResult.swift in Sources */,
 				92855DF42240EC72003EEB6A /* RestUploadFile.swift in Sources */,
+				921D57562262F34400C50F59 /* Disposable+Utils.swift in Sources */,
 				92855DCC2240BB7D003EEB6A /* AppDelegate.swift in Sources */,
 				92855DF12240D60B003EEB6A /* RestRunnable.swift in Sources */,
 				92855DE32240C0EF003EEB6A /* RestMethod.swift in Sources */,
