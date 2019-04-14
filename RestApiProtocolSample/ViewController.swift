@@ -15,7 +15,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        iTunesApi.search(keyword: "토스").request(SoftwareListInfo.self).subscribe(onSuccess: { [weak self] listInfo in
+        
+        iTunesApi.search(keyword: "토스").request(SoftwareListInfo.self) { progress in
+            print("totalUnitCount!: \(progress.totalUnitCount)")
+            print("completedUnitCount!: \(progress.completedUnitCount)")
+        }.subscribe(onSuccess: { [weak self] listInfo in
             guard let self = self else { return }            
             self.resultLabel?.text = "\(listInfo.results)"
 

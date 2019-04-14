@@ -17,6 +17,8 @@ private let kRestApiURL = "https://itunes.apple.com"
 private let kRestApiURL = "https://itunes.apple.com"
 #endif
 
+public typealias ProgressHandler = (Alamofire.Progress) -> (Void)
+
 public protocol RestApiProtocol {
     var host        : String { get }
     var basePath    : String { get }
@@ -32,18 +34,18 @@ extension RestApiProtocol {
     var url: String { return self.host + self.basePath + self.subPath }
     var uploadFile: RestUploadFile? { return nil }
     
-    public func request<R: Decodable>(_ type: R.Type) -> Single<R> {
+    public func request<R: Decodable>(_ type: R.Type, handler: ProgressHandler? = nil) -> Single<R> {
         self.printFullUrl()
         switch self.method {
         case .multipart:
-            return self._upload(type)
+            return self._upload(type, handler: handler)
 
         default:
-            return self._request(type)
+            return self._request(type, handler: handler)
         }
     }
     
-    private func _request<R: Decodable>(_ type: R.Type) -> Single<R> {
+    private func _request<R: Decodable>(_ type: R.Type, handler: ProgressHandler? = nil) -> Single<R> {
         return Single<R>.create { observer -> Disposable in
             if let reachabilityManager = NetworkReachabilityManager(), !reachabilityManager.isReachable {
                 let error = self.newError(code: -1, message: "네트워크 연결을 확인해주세요.")
@@ -66,13 +68,18 @@ extension RestApiProtocol {
                         }
                     }
                 }
+            
+            request.downloadProgress { progress in
+                handler?(progress)
+            }
+            
             return Disposables.create {
                 request.cancel()
             }
         }.observeOn(MainScheduler.instance)
     }
     
-    private func _upload<R: Decodable>(_ type: R.Type) -> Single<R> {
+    private func _upload<R: Decodable>(_ type: R.Type, handler: ProgressHandler? = nil) -> Single<R> {
         return Single<R>.create { observer -> Disposable in
             var dataRequest: DataRequest?
             
@@ -86,6 +93,9 @@ extension RestApiProtocol {
             }, to: self.url, encodingCompletion: { result in
                 switch result {
                 case .success(let request, _, _):
+                    request.uploadProgress { progress in
+                        handler?(progress)
+                    }
                     print("encording success")
                     dataRequest = request
                     request.responseData { response in
